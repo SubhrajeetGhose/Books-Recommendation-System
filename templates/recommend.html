@@ -11,10 +11,20 @@
     .text-white{
         color:white
     }
+    .text-name{
+        color:red
+        font-size:30px
+    }
+    .text-author{
+        color:black
+    }
+    .text-num{
+        color:black
+    }
 </style>
-<body style="background-color:black">
+<body style="background-color:#5499C7">
 
-    <nav class="navbar" style="background-color:#00a65a">
+    <nav class="navbar" style="background-color:#AED6F1">
         <a class="navbar-brand">My Book Recommendation</a>
         <ul class="nav navbar-nav">
             <li><a href="/">Home</a></li>
@@ -39,8 +49,9 @@
                         <div class="card">
                             <div class="card-body">
                                 <img class="card-img-top" src="{{i[2]}}">
-                                <h5 class="text-white">{{i[1]}}</h5>
-                                <p class="text-white">{{i[0]}}</p>
+                                <p class="text-name">{{i[0]}}</p>
+                                <h5 class="text-author">{{i[1]}}</h5>
+
                             </div>
                         </div>
                     </div>

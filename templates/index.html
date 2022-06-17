@@ -11,10 +11,19 @@
     .text-white{
         color:white
     }
+    .text-name{
+        color:black
+    }
+    .text-author{
+        color:white
+    }
+    .text-num{
+        color:black
+    }
 </style>
-<body style="background-color:black">
+<body style="background-color:#5499C7">
 
-    <nav class="navbar" style="background-color:#00a65a">
+    <nav class="navbar" style="background-color:#AED6F1">
         <a class="navbar-brand">My Book Recommendation</a>
         <ul class="nav navbar-nav">
             <li><a href="/">Home</a></li>
@@ -23,21 +32,21 @@
         </ul>
     </nav>
 
-    <div class="container">
-        <div class="row">
+    <div class="container" >
+        <div class="row" style="background-color:#AED6F1">
             <div class="col-md-12">
-                <h1 class="text-white" style="font-size:50px">Recommend Books</h1>
+                <h1 style="font-size:50px color:#E74C3C">Recommend Books</h1>
             </div>
 
             {% for i in range(book_name| length) %}
-                <div class="col-md-3" style="margin-top:30px">
+                <div class="col-md-3" style="margin-top:30px" >
                     <div class="card">
                         <div class="class-body">
                             <img class="card-img-top" src="{{image[i]}}">
-                            <h5 class="text-white">{{book_name[i]}}</h5>
+                            <h5 class="text-name">{{book_name[i]}}</h5>
                             <p class="text-white">{{author[i]}}</p>
-                            <p class="text-white">{{votes[i]}}</p>
-                            <p class="text-white">{{rating[i]}}</p>
+                            <p class="text-num">{{votes[i]}}</p>
+                            <p class="text-num">{{rating[i]}}</p>
                         </div>
                     </div>
                 </div>
